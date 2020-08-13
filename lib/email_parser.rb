@@ -9,12 +9,10 @@ class EmailAddressParser
     attr_accessor :email_addresses
 
     def initialize(email_addresses)
-        @data = email_addresses
+        @emails = email_addresses
     end 
     
     def parse
-        new_array = @data.split(/\s|,/)
-        new_array.delete("")
-        new_array.uniq
+        @emails.split(/\s|, /).uniq
     end 
 end 
