@@ -14,8 +14,7 @@ class EmailAddressParser
   end
   
   def parse
-    new = @email.split(/[\s,]/)
-    new.map{|i| i}.reject { |item| item.nil? || item == ""}.uniq
+    @email.split(/[\s,]/).reject { |item| item.nil? || item == ""}.uniq
   end
   
 end
