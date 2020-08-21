@@ -14,7 +14,7 @@ class EmailAddressParser
   
   def parse
     parsed = @email_addresses.split(/ |, /).uniq
-binding.pry
+
     parsed
   end
   
